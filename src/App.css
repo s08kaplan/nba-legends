@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Borel&family=Dancing+Script:wght@500&family=Edu+SA+Beginner&family=Outfit&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title{
+  font-weight: bolder !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+img {
+  width: 150px;
+  height: 200px;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.logo > img {
+  width: 300px;
+  height: 175px;
+}
+
+
+main{
+  background-color: bisque;
+}
+
+
+.statistics {
+  display: none;
+}
+.player-cards {
+  font-family: 'Dancing Script', cursive;
+  transition: all .8s;
+  border: 1px solid red;
+  background-image: url("https://cdn.mos.cms.futurecdn.net/CPAhzgowLi2NtrP9HfVy9Y.png") !important;
+   background-size: cover;
+   background-position: center;
+   border-radius: 1rem;
+
+  & img:hover {
+    transform: scale(1.1);
+  }
+  @media screen and (max-width:574px) {
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   
+  }
+
+  & .player-name {
+    font-size: 1.2rem;
+    color: darkorange;
+    font-family: 'Edu SA Beginner', cursive;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
