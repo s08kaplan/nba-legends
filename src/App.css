@@ -29,16 +29,35 @@ main{
 
 
 .statistics {
+  
+  display: flex;
+  flex-direction: column;
+  font-size: large;
+  font-family: 'Outfit', sans-serif; 
+  color: blueviolet;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: .5rem;
   display: none;
+  background-image: url(https://wallpapers.com/images/hd/nba-logo-1440-x-2560-3kf6d85nce5lafx9.jpg);
+  background-size: cover;
+  background-position: center;
+  
 }
+
+.toggle {
+  position: relative;
+}
+
 .player-cards {
   font-family: 'Dancing Script', cursive;
   transition: all .8s;
-  border: 1px solid red;
   background-image: url("https://cdn.mos.cms.futurecdn.net/CPAhzgowLi2NtrP9HfVy9Y.png") !important;
    background-size: cover;
    background-position: center;
    border-radius: 1rem;
+
 
   & img:hover {
     transform: scale(1.1);
